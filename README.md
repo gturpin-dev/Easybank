@@ -1,0 +1,2 @@
+# Easybank
+Frontend mentor style
