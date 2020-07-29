@@ -1,0 +1,26 @@
+/// Uncomment and Set your own fonts from GoogleFonts
+/// ============================
+@import url('https://fonts.google.com/specimen/Public+Sans');
+
+/// Uncomment to override default fonts of website
+/// ============================
+$font-primary: "Public Sans", sans-serif;
+// $font-secondary: "Raleway", sans-serif;
+
+.font-primary { font-family: $font-primary !important; }
+.font-secondary { font-family: $font-secondary !important; }
+
+/// Basic fonts declaration
+/// ============================
+html, body {
+  font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}

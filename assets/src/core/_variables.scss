@@ -1,0 +1,44 @@
+// Main fonts
+@import url('https://fonts.googleapis.com/css?family=Cabin|BioRhyme:400,700&display=swap');
+$font-primary: 'BioRhyme', sans-serif !default; // font for title
+$font-secondary: 'Cabin', sans-serif !default;   // font for text
+
+/// Default colors, feel free to override them
+/// ============================
+$color-primary:  hsl(136, 65%, 51%) !default;
+$color-secondary:  hsl(233, 26%, 24%) !default;
+$color-grey:  #4A4A4A !default;
+$color-lightgrey: hsl(0, 0%, 98%) !default;
+$color-danger: #D23737 !default;
+
+$color-cyan: hsl(192, 70%, 51%);
+$color-blue: hsl(233, 8%, 62%);
+$color-lightblue: hsl(220, 16%, 96%);
+
+/// Theme color, feel free to add your own, it will generate every class in heritance
+/// ============================
+$user-colors: (
+  "primary":    $color-primary,    // primary color of website
+  "secondary":  $color-secondary,  // secondary color of website
+  "grey":  $color-grey,            // color for more important text
+  "lightgrey":  $color-lightgrey,  // color for less important text
+  "danger":  $color-danger,        // color for alerts or something dangerous
+  "cyan": $color-cyan,
+  "blue": $color-blue,
+  "lightblue": $color-lightblue,
+  "white": #fff,
+  "black": #000,
+
+  /// You can add colors from palet by adding a line like under
+  /// 'yellow-1': map-get($color-palet, 'yellow-1'),
+);
+
+/// Breakpoints for generates utilities responsive class
+/// ============================
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
