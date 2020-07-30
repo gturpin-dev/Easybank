@@ -19,7 +19,11 @@
                 <img src="./images/logo.svg" alt="logo easybank">
             </div>
 
-            <ul class="d-flex justify-between align-center child-mx-100">
+            <div class="burger md:d-none">
+                <div class="burger-icon"></div>
+            </div>
+
+            <ul class="mobile-menu flex-col md:flex-row justify-between align-center child-mx-100 child-my-100">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -27,7 +31,7 @@
                 <li><a href="#">Careers</a></li>
             </ul>
 
-            <a href="#" class="btn-primary">Request Invite</a>
+            <a href="#" class="d-none md:d-block btn-primary">Request Invite</a>
         </nav>
     </header>
 
@@ -155,5 +159,7 @@
         </div>
     </footer>
 
+
+<script src="./assets/src/main.js" charset="utf-8"></script>
 </body>
 </html>

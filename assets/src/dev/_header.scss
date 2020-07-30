@@ -4,7 +4,42 @@ header {
     z-index: 100;
     background-color: #fff;
 
-    .navbar > ul a {
-        color: $color-blue;
+    .navbar {
+
+        .mobile-menu {
+            @include under(768) {
+                position: fixed;
+                top: 100px;
+                background: white;
+                width: calc(100% - 50px);
+                margin: 0 auto;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 375px;
+                opacity: 0;
+                transition: opacity .4s;
+                border-radius: 8px;
+                box-shadow: 0 0 500px 5px $color-secondary;
+                z-index: 5;
+                padding: 1.5rem 0;
+            }
+        }
+
+        .burger {
+            cursor: pointer;
+
+            .burger-icon { @include burger(25px, 2px, 5px, #222); }
+            &.is-active > .burger-icon { @include burger-to-cross; }
+            &.is-active + .mobile-menu { opacity: 1; }
+        }
+
+        > ul a {
+            color: $color-blue;
+
+            @include under(768) {
+                color: $color-secondary;
+                display: block;
+            }
+        }
     }
 }
