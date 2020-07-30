@@ -2,12 +2,13 @@
 /// ============================
 $range-text-excerpt: (1, 5);
 $range-line-height: (10, 30);
-$range-font-size: (10, 40);
+$range-font-size: (10, 50);
 
 /// white-space
 /// ============================
 .text-wrap { white-space: wrap !important; }
 .text-nowrap { white-space: nowrap !important; }
+.text-preline { white-space: pre-line !important; }
 
 .text-excerpt {
   overflow: hidden !important;

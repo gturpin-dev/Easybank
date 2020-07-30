@@ -23,3 +23,10 @@ h5,
 h6 {
   font-family: $font-primary;
 }
+
+h1,
+h2,
+h3 {
+    color: $color-secondary;
+    font-weight: normal;
+}

@@ -1,3 +1,10 @@
 header {
     height: 75px;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+
+    .navbar > ul a {
+        color: $color-blue;
+    }
 }

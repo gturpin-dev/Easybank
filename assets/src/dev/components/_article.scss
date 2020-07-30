@@ -1,0 +1,39 @@
+.articles [class*=gl_col] {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.article {
+    border-radius: 8px;
+    background-color: #fff;
+
+    &__img {
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    &__author {
+        font-style: normal;
+        color: $color-blue;
+        font-size: .8rem;
+    }
+
+    &__body {
+        padding: 2rem 1.25rem;
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.2;
+        margin: 1rem 0;
+    }
+
+    &__copy {
+        color: $color-blue;
+        @include excerpt-text(1.3em, 4);
+    }
+}

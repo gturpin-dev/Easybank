@@ -1,0 +1,27 @@
+.hero {
+    // background: url("../../../../../images/bg-intro-desktop.svg") no-repeat 120% 0;
+    min-height: 700px;
+    height: 700px;
+
+    &__content {
+        position: relative;
+        z-index: 10;
+    }
+
+    .pictures {
+
+        &__bg {
+            top: 0;
+            right: 0;
+            z-index: 1;
+            transform: translate(35%, -25%);
+        }
+
+        &__tel {
+            top: 0;
+            right: 0;
+            z-index: 2;
+            transform: translate(20%, -15%);
+        }
+    }
+}
