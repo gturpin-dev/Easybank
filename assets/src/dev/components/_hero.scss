@@ -6,6 +6,11 @@
     &__content {
         position: relative;
         z-index: 10;
+
+        @include under(576) {
+            margin-top: 300px;
+            text-align: center;
+        }
     }
 
     .pictures {
@@ -15,13 +20,24 @@
             right: 0;
             z-index: 1;
             transform: translate(35%, -25%);
+            
+            @include under(576) {
+                right: 50%;
+                transform: translate(75%, -25%);
+                width: 150%;
+            }
         }
-
+        
         &__tel {
             top: 0;
             right: 0;
             z-index: 2;
             transform: translate(20%, -15%);
+            @include under(576) {
+                right: 50%;
+                transform: translate(50%, -25%);
+                width: 90%;
+            }
         }
     }
 }

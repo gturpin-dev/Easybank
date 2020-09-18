@@ -12,7 +12,7 @@ $font-primary: "Public Sans", sans-serif;
 /// Basic fonts declaration
 /// ============================
 html, body {
-  font-family: $font-primary;
+	font-family: $font-primary;
 }
 
 h1,
@@ -21,12 +21,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-primary;
+	font-family: $font-primary;
 }
 
 h1,
 h2,
 h3 {
-    color: $color-secondary;
-    font-weight: normal;
+	color: $color-secondary;
+	font-weight: normal;
 }

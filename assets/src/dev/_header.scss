@@ -23,6 +23,7 @@ header {
                 z-index: 5;
                 padding: 1.5rem 0;
             }
+            pointer-events: none;
         }
 
         .burger {
@@ -30,7 +31,7 @@ header {
 
             .burger-icon { @include burger(25px, 2px, 5px, #222); }
             &.is-active > .burger-icon { @include burger-to-cross; }
-            &.is-active + .mobile-menu { opacity: 1; }
+            &.is-active + .mobile-menu { opacity: 1; pointer-events: all;}
         }
 
         > ul a {
